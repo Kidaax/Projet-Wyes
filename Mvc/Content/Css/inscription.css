@@ -1,0 +1,323 @@
+/* Définition des polices personnalisées */
+
+/* On va sur le site FontSquirrel qui propose un générateur de polices avec @font-face.
+   L'outil nous donne toutes les versions de polices pour les différents navigateurs et 
+   nous donne directement le code CSS */
+
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('polices/ballpark.woff') format('woff'),
+         url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Corps de la page */
+
+body  
+{
+    background: url("images/ombre.png") repeat-x top, url("images/fond_page_jaune.png");
+    font-family: "Trebuchet MS", Arial;
+    color: black;
+}
+
+#bloc_page
+{
+    width: 950px;
+    margin: auto;
+}
+
+section h1, footer h1, nav a
+{
+    font-family: Dayrom;
+}
+
+
+/* Header: En-tête de la page */
+
+header
+{
+    background: url("images/separateur.png") repeat-x bottom;
+    display: flex; /* Mettre tout l'en-tête sur la même ligne */
+    align-items: flex-end; /* Aligne en bas mon logo et ma navigation */
+}
+
+#logo
+{
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+}
+
+#logo img
+{
+    width: 280px;
+    height: 125px;
+}
+
+
+/* Nav: Navigation Transversale de la page */
+
+nav ul
+{
+    list-style-type: none; /* Enlève les puces */
+    display: flex; /* Mettre tout sur une ligne */
+}
+
+nav li
+{
+    margin-right: 25px;
+}
+
+nav a
+{
+    font-size: 1.62em;
+    color: navy;
+    text-decoration: none; /* Cela enlève le soulignement */
+}
+
+nav a:hover
+{
+    color: maroon;
+    text-decoration: underline maroon;
+}
+
+
+/* Section: Corps */
+
+section
+{
+    display: flex;
+    margin-top: 5px;
+}
+
+/* Article */
+
+article
+{
+    margin-left: 120px; 
+    margin-right: 10px; 
+}
+
+article h1
+{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-color: black;
+    opacity: 0.9;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 6px 6px 10px gray;
+    text-align: center;
+    font-size: 2.7em;
+}
+
+article form
+{
+	border: 1px solid orange;
+	padding:10px;
+	background-color:orange;
+}
+
+article p
+{
+	width:400px;
+	padding-left: 305px;
+	text-align: left;
+	vertical-align: top;
+}
+
+article label.left
+{
+	float: left;
+	margin-left: -305px;
+	font-weight: bold;
+}
+
+
+/* Footer: le bas de la page */
+
+footer
+{
+    margin-top: 55px;
+    display: flex;
+    background: url("images/ico_top.png") no-repeat top center, url("images/separateur.png") repeat-x top, url("images/ombre.png") repeat-x top;
+}
+
+footer #dans_footer
+{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 55px;
+    display: flex;
+}
+
+footer h1
+{
+    text-align: center;
+    font-size: 1.8em;
+}
+
+footer p
+{
+    text-align: center;
+    font-style: italic;
+    font-size: 1em;
+}
+
+footer a
+{
+    color: navy;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+footer a:hover
+{
+    color: maroon;
+    text-decoration: underline maroon;
+}
+
+#contact
+{
+    margin-left: 10px; 
+}
+
+#suivez-nous
+{
+    margin-left: 80px; 
+    margin-right: 72px; 
+}
+
+#suivez-nous img
+{
+    width: 70px;
+    margin-right: 5px;
+}
+
+#sites_wyes
+{
+    margin-left: 30px;
+    margin-right: 10px;
+}
+    
+
+/* Fin de la page Inscription */
+
+
+/* PARTIE RESPONSIVE */
+
+@media all and (max-width: 1024px)
+{
+    /* Page qui s'adapte en fonction de la taille automatiquement */
+    #bloc_page
+    {
+        width: auto;
+    }
+
+
+    /* On s'occupe de la navigation */
+    nav
+    {
+        width: auto;
+        text-align: left;
+    }
+
+    nav ul
+    {
+        flex-direction: column;
+    }
+
+    nav li
+    {
+        padding-left: 4px;
+    }
+
+    nav a 
+    {
+        font-size: 1.3em;
+    }
+
+
+    /* On s'occupe maintenant de la partie Section */
+    section article
+    {
+        width: auto;
+        margin-left: 5px;
+    }
+
+    article form
+    {
+        width: auto;
+        margin-left: 5px;
+    }
+
+}
+
+
+/* Quand on est sur mobile */
+
+@media all and (max-device-width: 480px)
+{
+    /* Page qui s'adapte en fonction de la taille automatiquement */
+    #bloc_page
+    {
+        width: auto;
+    }
+
+
+    /* On s'occupe de la navigation */
+    nav
+    {
+        width: auto;
+        text-align: left;
+    }
+
+    nav ul
+    {
+        flex-direction: column;
+    }
+
+    nav li
+    {
+        padding-left: 4px;
+    }
+
+    nav a 
+    {
+        font-size: 1.3em;
+    }
+
+
+    /* On s'occupe maintenant de la partie Section */
+    section article
+    {
+        width: auto;
+        margin-left: 5px;
+    }
+
+    article form
+    {
+        width: auto;
+        margin-left: 5px;
+    }
+
+}
+

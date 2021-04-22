@@ -1,0 +1,14 @@
+En gros incha'Allah on va faire les msg comme linscription
+
+-dans la page de connexion de luser, on va lui mettre un lien vers sa boite de reception.
+-pour linscription, si jamais tout est bon, on lache un pti rendeuuur vers une autre page qui dira :
+    *message bien envoyé les freres
+    *pour retourner a la page denvoit cliquez ici
+    *pour acceder a ma boite de reception cest ici
+
+-Pour la boite de reception :
+  *lien qui redirige et appel le controller de la reception
+  *dans cette page avec pti rendeuuur, on affiche les msg du gars, ces messgage
+    on les recup avec un select dans le model, qu'on transmet au controller via lappel de cette fonction.
+    Ensuite incha'Allah on lache un pti rendeur pour transmettres ces messages à la vue pour qu'elle puiise
+    les afficher incha'Allah.

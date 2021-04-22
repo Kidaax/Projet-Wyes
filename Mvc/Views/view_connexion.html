@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<!-- Ca c'est pour les mobiles -->
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" href="Content/Css/ConnexionWYES.css" />
+		<title>WYES : When Your Eyes Speak/Connexion</title>
+	</head>
+
+	<body>
+		<div id="bloc_page">
+			<header>
+				<div id="logo">
+					<a href="?controller=accueil"><img src="Content/image\logo_wyes.png" alt="Logo WYES" title="Logo: WYES" /></a>
+				</div>
+
+				<nav>
+					<ul>
+						<li><a href="?controller=accueil">Accueil</a></li>
+						<li><a href="?controller=connexion">Connexion</a></li>
+						<li><a href="?controller=inscription">Inscription</a></li>
+						<li><a href="view_boutique.html">Boutique</a></li>
+					</ul>
+				</nav>
+			</header>
+
+
+			<br />
+			<br />
+
+
+			<section>
+				<article>
+					<h1>Connectez-Vous</h1>
+
+					<form action="?controller=connexion&action=verification" method="post">
+
+						<div>
+					    	<label for="mail">E-mail : </label>
+					        <input type="email" id="mail" name="mail">
+					    </div>
+
+					    <div>
+					        <label for="name">Mot De Passe : </label>
+					        <input type="password" id="mdp" name="mdp">
+					    </div>
+
+					    <div class="button">
+					    	<button type="submit">Connexion</button>
+					    </div>
+					</form>
+
+				</article>
+			</section>
+
+			<footer>
+				<div id="dans_footer">
+					<div id="contact">
+						<h1>Contact</h1>
+						<p>Vous pouvez nous contacter par mail en cliquant juste <a href="mailto:maxime@wyes.fr">ICI</a></p>
+						<p>Pour plus d'information, vous pouvez nous retrouver <a href="http://wyes.fr/">ICI</a></p>
+					</div>
+
+					<div id="suivez-nous">
+						<h1>Suivez-Nous</h1>
+						<p>
+							<a href="https://www.facebook.com/teamwyes"><img src="Content/image/facebook.png" alt="Facebook" title="Facebook"></a>
+							<a href="https://twitter.com/teamwyes"><img src="Content/image/twitter.png" alt="Twitter" title="Twitter"></a>
+							<a href="https://www.linkedin.com/company/wyes"><img src="Content/image/linkedin.png" alt="LinkedIn" title="LinkedIn"></a>
+						</p>
+					</div>
+
+					<div id="sites_wyes">
+						<h1>Notre Site</h1>
+						<p>
+							<a href="http://wyes.fr/">WYES : When Your Eyes Speak</a>
+						</p>
+					</div>
+				</div>
+			</footer>
+
+		</div>
+	</body>
+</html>

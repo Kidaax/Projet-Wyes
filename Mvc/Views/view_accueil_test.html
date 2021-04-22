@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Uesh</title>
+
+        <h1>Bienvenue sur votre espace personnel</h1>
+    </head>
+    <style>
+    form
+    {
+        text-align:center;
+    }
+    </style>
+    <body>
+
+        <p>
+          Bonjour et bienvenue <?=$prenom ?> <?=$nom ?> Comment çava ?
+
+        </p>
+        <a href ="?controller=send&action=send">Envoyer un message</a>
+      </br>
+        <a href ="?controller=reception&action=reception">Ma boite de reception</a>
+      </br>
+        <a href="Utils/deconnexion.php">Déconnexion</a>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <!-- Ca c'est pour les mobiles -->
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="Content/Css/inscription.css" />
+    <title>WYES : When Your Eyes Speak/Inscription Aidant</title>
+  </head>
+
+  <body>
+    <div id="bloc_page">
+      <header>
+        <div id="logo">
+          <a href="?controller=accueil"><img src="Content/image\logo_wyes.png" alt="Logo WYES" title="Logo: WYES" /></a>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="?controller=accueil">Accueil</a></li>
+						<li><a href="?controller=connexion">Connexion</a></li>
+						<li><a href="?controller=inscription">Inscription</a></li>
+						<li><a href="Views/view_boutique.html">Boutique</a></li>
+          </ul>
+        </nav>
+      </header>
+
+
+      <br />
+      <br />
+
+
+      <section>
+        <article>
+          <h1>Inscription Aidant</h1>
+
+          <form action="?controller=inscription&action=info" method="post">
+            <p>
+              <label for="prenom" class="left">Prénom :</label>
+              <input name="prenom" id="prenom" type="text" size="30" maxlength="30" />
+            </p>
+
+            <p>
+              <label for="nom" class="left">Nom :</label>
+              <input name="nom" id="nom" type="text" size="30" maxlength="30" />
+            </p>
+
+              <input name="role" value="aidant" type="hidden"/>
+
+            <p>
+              <label for="nom" class="left">E-mail :</label>
+              <input name="mail" id="mail" type="mail" size="30" maxlength="30" />
+            </p>
+
+            <p>
+              <label for="motdepasse" class="left">Mot de Passe :</label>
+              <input name="mdp" id="motdepasse" type="password" size="30" maxlength="30" />
+            </p>
+
+            <p>
+              <label for="genre" class="left">Genre :</label><br/>
+
+              <input value="Homme"name="genre" id="genre" type="radio">
+              <label for="Homme">Homme</label>
+
+              <input value="Femme"name="genre" id="genre" type="radio">
+              <label for="Femme">Femme</label>
+            </p>
+
+            <p>
+              <label for="commentaires" class="left">Commentaires :</label>
+              <textarea name="commentaires" id="commentaires" cols="30" rows="5"> </textarea>
+            </p>
+
+            <input type="submit" value="Envoyer" />
+          </form>
+
+        </article>
+      </section>
+
+      <footer>
+        <div id="dans_footer">
+          <div id="contact">
+            <h1>Contact</h1>
+            <p>Vous pouvez nous contacter par mail en cliquant juste <a href="mailto:maxime@wyes.fr">ICI</a></p>
+            <p>Pour plus d'information, vous pouvez nous retrouver <a href="http://wyes.fr/">ICI</a></p>
+          </div>
+
+          <div id="suivez-nous">
+            <h1>Suivez-Nous</h1>
+            <p>
+              <a href="https://www.facebook.com/teamwyes"><img src="Content/image/facebook.png" alt="Facebook" title="Facebook"></a>
+              <a href="https://twitter.com/teamwyes"><img src="Content/image/twitter.png" alt="Twitter" title="Twitter"></a>
+              <a href="https://www.linkedin.com/company/wyes"><img src="Content/image/linkedin.png" alt="LinkedIn" title="LinkedIn"></a>
+            </p>
+          </div>
+
+          <div id="sites_wyes">
+            <h1>Notre Site</h1>
+            <p>
+              <a href="http://wyes.fr/">WYES : When Your Eyes Speak</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  </body>
+</html>
